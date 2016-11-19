@@ -1,0 +1,81 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+.site {
+}
+
+.dummy {
+	padding-top: 35%;
+}
+
+.reviews {
+background: url("../images/reviews.png") top center no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+z-index: -1;
+}
+
+#block-reviews {
+	z-index:1;
+	margin-top: -42%;
+	margin-bottom: 4%;
+}
+
+.accordion {
+	position:relative;
+	overflow:hidden;
+	width:80%;
+	margin:0px auto;
+	list-style:none;
+}
+
+.accordion .panel {
+	background-color:#000;
+	background-image:url(../../images/bg/preloader.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+	position:absolute;
+	overflow:hidden;
+}
+
+.accordion img {
+	position:absolute;
+	left:-9999px;
+}
+
+.accordion .caption {
+	
+	position:absolute;
+	z-index:20;
+	text-align: center;
+	margin-top: 10% !important;
+	margin-left: -10% !important;
+	
+}
+
+.accordion .caption1 {
+	margin-top: 40%;
+	}
+
+
+.accordion .caption-background {
+	background:transparent url(../../images/bg/captionBg.png);
+	background:rgba(0,0,0,0);
+	position:absolute;
+	width:100%;
+	height:auto;
+	
+}
+
+
+.accordion .caption p {
+	color:#FFF;
+	
+}
+
+
+.accordion .caption p a {
+	color:#FFF;
+}
