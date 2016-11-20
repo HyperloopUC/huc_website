@@ -10,3 +10,5 @@ Once the dev is up to date and every person on the repo agrees that the code is 
 
 
 For any specific questions call me @ 5136418673 or email dhaval.shiyani@hyperloopuc.com
+
+For all new users to the repo, start from index.html
