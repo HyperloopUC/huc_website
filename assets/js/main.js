@@ -1,7 +1,9 @@
+
 (function($) {
   'use strict';
   $(document).ready(function() {
     /* Microsoft Smooth Scroll Disabler */
+	
     var url;
     if (navigator.userAgent.match(/Trident\/7\./)) {
       $('body').on('mousewheel', function() {
@@ -289,10 +291,13 @@ if ($(".ct-chart-animated").length !== 0) {
 
 
   /*Menu mobile*/
-
+setTimeout(function(){
+ //$('.ct-menu-mobile').toggleClass('ct-menu-mobile-open'); 
   $('.ct-js-menu-button').on('click', function(){
     $('.ct-menu-mobile').toggleClass('ct-menu-mobile-open');
+	
   })
+ 
 
   $('.ct-js-menu-mobile-nav .dropdown').on('click', function(){
     $(this).toggleClass('ct-menu-mobile-nav-open').siblings().removeClass('ct-menu-mobile-nav-open')
@@ -308,7 +313,7 @@ if ($(".ct-chart-animated").length !== 0) {
   $('.ct-js-open-map').on('click', function(){
     $('.ct-map-toggle').toggleClass('ct-map-open')
   })
-
+}, 1000);
     /*Navbar Search Simple*/
 
     $('.ct-js-search.ct-search-simple .ct-search-icon').on("click", function(){
@@ -366,5 +371,28 @@ if ($(".ct-chart-animated").length !== 0) {
         forceHeight: false
       });
     }
+	
+	$(".ct-js-menu-button").click(function(e){
+	//	alert("asdsa");
+		 //$('.ct-menu-mobile').toggleClass('ct-menu-mobile-open'); 	
+	} )
   });
+
 })(jQuery);
+
+
+
+function menu(obj){
+	var classname = $(obj).parent().parent().attr("class");
+	if(classname == "ct-menu-mobile ct-menu-mobile-open"){
+		setTimeout(function(){
+	 		$('.ct-menu-mobile').removeClass('ct-menu-mobile-open'); 
+		}, 200);
+	} else {
+		setTimeout(function(){
+	 		$('.ct-menu-mobile').toggleClass('ct-menu-mobile-open'); 
+		}, 200);
+	}
+
+	
+}

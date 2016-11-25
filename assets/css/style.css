@@ -3383,6 +3383,7 @@ html {
   html {
     font-size: 62.5%; } }
 
+
 .ct-menu-mobile {
   text-align: center;
   text-transform: uppercase;
@@ -3492,14 +3493,18 @@ html {
       height: 50px; }
   @media only screen and (min-width: 480px) {
     .ct-menu-mobile {
+		visibility:visible;
       min-width: 300px;
       width: auto;
       right: -300px; } }
+  
    @media only screen and (min-width: 992px) {
     .ct-menu-mobile .ct-menu-mobile-nav {
+				visibility:visible;
       padding: 70px 15px; } }
   @media only screen and (min-width: 768px) {
     .ct-menu-mobile .ct-menu-mobile-nav {
+		visibility:visible;
       line-height: 50px;
       padding: 30px 15px; } }
 
@@ -3538,9 +3543,11 @@ html {
   position: relative;
   z-index: 999;
   display: none; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) {
     .ct-nav {
-      display: block; } }
+      display: block; } 
+	  .ct-menu-mobile {
+		visibility:hidden;}}
 
 .navbar-fixed {
   position: fixed;

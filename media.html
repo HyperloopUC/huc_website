@@ -291,129 +291,24 @@
         </div>
       </section>
       <!-- Footer-->
-      <footer class="ct-footer">
-        <div class="ct-prefooter">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-4 col-xs-offset-4">
-                <div data-autoplay="true" data-autoplaySpeed="2000" data-arrows="false" data-items-xs="3" data-items-sm="3" data-items-lg="3" data-items="1" class="ct-slick ct-js-slick ct-socials-full-width">
-                  <div class="tablex item"><a href="https://www.facebook.com/createITpl"><i class="fa fa-facebook"></i></a></div>
-                  <div class="tablex item"><a href="#"><i class="fa fa-twitter"></i></a></div>
-                  <div class="tablex item"><a href="#"><i class="fa fa-instagram"></i></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="ct-postfooter">
-          <div class="container">
-            <div class="ct-footer-navigation">
-              <ul class="list-inline list-unstyled text-uppercase">
-                <li><a href="index.html">Home</a>
-            </li>
-            <li><a href="pod.html">Pod</a>
-            </li>
-            <li><a href="media.html">Media</a>
-            </li>
-			<li><a href="team.html">Team</a>
-            </li>
-            <li><a href="contact.html">Contact</a>
-            </li>
-              </ul>
-            </div>
-          </div>
-          <div class="ct-footer-copyright">
-            <div class="container">&copy; 2015 all rights reserved. design & development by <a href="http://remotedevelopers.eu/">ThemesOverflow</a></div>
-          </div>
-        </div>
+      <footer class="ct-footer" >
+        
+          <div class="container" id="footerContainer">
+            
+       
+         </div>
       </footer>
-    </div>
-    <!-- Mobile Menu //-->
-    <div class="ct-menu-mobile">
-      <div class="ct-menu-body">
-        <div class="ct-menu-button ct-js-menu-button"></div>
-        <div class="ct-menu-inner">
-          <div class="ct-menu-logo"><a href="index.html"><img src="assets/images/content/logo-mobile.png" alt=""></a></div>
-          <div class="ct-menu-contact"><a href="tel:08001234567" class="h3">0 800 123 4567</a></div>
-          <div class="ct-menu-user-panel">
-            <div class="ct-panel-left"><a data-toggle="modal" data-target="#modal_login"><i class="fa fa-power-off"></i>login</a></div>
-            <div class="ct-panel-right"><a data-toggle="modal" data-target="#modal_register"><i class="fa fa-plus"></i>register</a></div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="ct-menu-search">
-            <input type="text" Placeholder="Search ..." class="form-control input-lg">
-          </div>
-          <ul class="ct-menu-mobile-nav ct-js-menu-mobile-nav">
-            <li class="dropdown dropdown-fw"><a>Home</a>
-              <ul class="dropdown-menu">
-                <li><a href="coach.html">coach</a>
-                </li>
-                <li><a href="speaker.html">speaker</a>
-                </li>
-                <li><a href="training.html">training</a>
-                </li>
-                <li><a href="online-content.html">online content</a>
-                </li>
-                <li><a href="coming-soon.html">coming soon</a>
-                </li>
-                <li><a href="index.html">corporate</a>
-                </li>
-              </ul>
-            </li>
-            <li><a href="about.html">About me</a>
-            </li>
-            <li><a href="services.html">services</a>
-            </li>
-            <li><a href="portfolio.html">case study</a>
-            </li>
-            <li><a href="pricing.html">pricing</a>
-            </li>
-            <li><a href="testimonials.html">testimonials</a>
-            </li>
-            <li class="dropdown dropdown-fw"><a>pages</a>
-              <ul class="dropdown-menu">
-                <li><a href="about-us.html">about us</a>
-                </li>
-                <li><a href="team.html">team</a>
-                </li>
-                <li><a href="contact-us.html">contact us</a>
-                </li>
-                <li><a href="faq.html">faq</a>
-                </li>
-                <li><a href="job.html">job</a>
-                </li>
-                <li><a href="portfolio.html">portfolio</a>
-                </li>
-                <li><a href="portfolio2.html">portfolio2</a>
-                </li>
-                <li><a href="portfolio-single.html">portfolio single</a>
-                </li>
-                <li><a href="services-extended.html">services extended</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown dropdown-fw"><a>blog</a>
-              <ul class="dropdown-menu">
-                <li><a href="blog.html">blog listing</a>
-                </li>
-                <li><a href="blog-single.html">blog single post</a>
-                </li>
-              </ul>
-            </li>
-            <li><a href="contact.html">contact me</a>
-            </li>
-          </ul>
-          <ul class="ct-socials list-inline list-unstyled">
-            <li class="ct-socials__itemfacebook"><a href="https://www.facebook.com/createITpl"><i class="fa fa-facebook"></i></a></li>
-            <li class="ct-socials__itemtwitter"><a href="https://twitter.com/createitpl"><i class="fa fa-twitter"></i></a></li>
-            <li class="ct-socials__iteminstagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <!-- JavaScripts-->
     <script src="assets/js/sella.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/form/js/contact-form.js"></script>
+     <script> 
+    $(function(){
+      $("#footerContainer").load("footer.html"); 
+    });
+	$(function(){
+		$("#header").load("header.html");
+	});
+    </script> 
   </body>
 </html>
