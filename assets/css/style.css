@@ -7952,7 +7952,7 @@ table.tablesaw-colored tbody tr:nth-child(2n) {
 .morph-button > button {
 	position: relative;
 	padding: 0 1em;
-	border: none;
+	/*border: none;*/
 	background-color: #e00122;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -8759,6 +8759,14 @@ table.tablesaw-colored tbody tr:nth-child(2n) {
 		right: 5px;
 	}
 }
+
+.navbar-scrolled .headerList{
+	color:white !important;		
+}
+.headerList{
+	color:black !important;		
+}
+
 
 
 

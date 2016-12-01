@@ -182,13 +182,41 @@
                 <span class="h4 ct-u-color--gray" style="font-family: 'Lato', sans-serif; font-weight: 500">Get in touch to</span>
               <h2 class="h1" style="color: #000000; font-family: 'Lato', sans-serif; font-weight: 500">Become an Official sponsor</h2>
             </div>
-                  
-                  <p class="text-center" style="font-size: 18px; font-family: 'Lato', sans-serif; padding-top: 40px">To learn more about the benifits Hyperloop UC can offer, please email us at <i style="color: #E00122"><a href="mailto:info@hyperloopuc.com">info@hyperloopuc.com</a></i>
+                  <div class="row">
+        <form method="post" action="assets/mail/contact_me.php"  id="contactfrm" role="form" >
+          <div class="col-sm-4">
+            <div class="form-group">
+              <!--<label for="name" style="font-family: 'Lato', sans-serif;">Name</label>-->
+              <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)" required>
+            </div>
+            <div class="form-group">
+              <!--<label for="email" style="font-family: 'Lato', sans-serif;">Email</label>-->
+              <input type="text" class="form-control" name="company" id="company" placeholder="Enter Company Name"   title="Please enter a valid company name" required>
+             
+            </div>
+            <div class="form-group">
+              <!--<label for="email" style="font-family: 'Lato', sans-serif;">Email</label>-->
+              <input type="email" class="form-control" name="email" id="email" placeholder="Enter email"   title="Please enter a valid email address" required>
+             
+            </div>
+            <div class="form-group">
+              <!--<label for="comments" style="font-family: 'Lato', sans-serif;">Comments</label>-->
+              <textarea name="comments" class="form-control" id="comments" cols="3" rows="5"  placeholder="Enter your message…" title="Please enter your message (at least 10 characters)" required></textarea><br>
+               <input type="submit" value="Submit Message" class="btn btn-danger-o-style2 btn-sm" style="opacity: 1; width: auto; font-size: 15px; font-family: 'Lato', sans-serif;">
+            </div>
+            
+          </div>
+         <div class="col-lg-12 text-center">
+                    <div id="success"></div>
+         </div>
+           
+        </form>
+                  <p class="text-center" style="font-size: 18px; font-family: 'Lato', sans-serif; padding-top: 40px">To learn more about the benifits Hyperloop UC can offer, please email us at <i style="color: #E00122"><a href="mailto:info@hyperloopuc.com">info@hyperloopuc.com</a></i></p>
               
                   <p class="text-center" style="font-size: 18px; font-family: 'Lato', sans-serif; padding-top: 40px">Join the revolution!
                   </p>
               
-                </form>
+                </div>
               </div>
             </div>
           </div>
@@ -220,7 +248,7 @@
     <script src="assets/js/sella.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/form/js/contact-form.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?"></script>
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?"></script>
     <script>
       var map, bounds, marker, mapStyle;
       var mapSelector = $(".ct-js-googleMap");
@@ -254,7 +282,7 @@
           alert('Geocode was not successful for the following reason: ' + status);
         }
       });
-    </script>
+    </script>-->
     <script> 
     $(function(){
       $("#footerContainer").load("footer.html"); 
