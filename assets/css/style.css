@@ -8766,6 +8766,9 @@ table.tablesaw-colored tbody tr:nth-child(2n) {
 .headerList{
 	color:black !important;		
 }
+mycontent-left {
+  border-right: 1px solid #333;
+}
 
 
 
