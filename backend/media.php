@@ -3,18 +3,45 @@
 <?php
     if(!isset($_SESSION['username']))
     {
-	   header("index.php");
+	   ?>
+		 <script type='text/javascript'>
+           // window.location = "index.php";
+            </script>
+            <?php
     }
 ?>
     <?php
     include 'config.php';
    
 ?>
+    
 </head>
 <body>
     <h1>Media Page</h1>
 
 <?php
+    
+    if(isset($_GET['d']))
+	{
+		mysqli_query($conn,"update media set showFlag = 'false' where mediaId='".$_GET['d']."'") or die(mysqli_error($conn));	
+        ?>
+		 <script type='text/javascript'>
+            window.location = "media.php";
+            </script>
+            <?php
+	}
+	if(isset($_GET['p']))
+	{
+		mysqli_query($conn,"update media set showFlag = 'true' where mediaId='".$_GET['p']."'") or die(mysqli_error($conn));
+        ?>
+		 <script type='text/javascript'>
+            window.location = "media.php";
+            </script>
+            <?php
+	}
+    
+    
+    
 	$sql = 'select * from media';
 
 $count = 1;
@@ -52,16 +79,18 @@ while($row = $result->fetch_assoc())
             <td><?php echo $row['webLink']; ?></td>
             <td><?php echo $row['logoLink']; ?></td>
             <td><?php  
-				if($row['showFlag'] == true)
+				if($row['showFlag'] == 'true')
 				{
 					?>
-                    <a href='articles.php?d=<?php echo $row['id']?>'><button>Delete</button></a>
+                
+                    <a href='media.php?d=<?php echo $row['mediaId']?>'><button>Delete</button></a>
                     <?php
 				}
 				else
 				{
 					?>
-                    <a href='articles.php?p=<?php echo $row['id']?>'><button>Put Back</button></a>
+                
+                    <a href='media.php?p=<?php echo $row['mediaId']?>'><button>Put Back</button></a>
                     <?php
 				}
 			 ?></td>
