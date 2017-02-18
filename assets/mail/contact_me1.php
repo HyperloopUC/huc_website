@@ -22,7 +22,7 @@ $headers = "From: info@hyperloopuc.com\n"; // This is the email address the gene
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
 $thankYou="<p>Thank you! Your message has been sent.</p>";
-header("Location: ../../contact.html#success?s=sent");
+header("Location: ../../sponsors.html#success?s=sent");
 return true;
 			
 ?>

@@ -3835,11 +3835,11 @@ html {
   /*.navbar-scrolled .navbar-brand img2 .navbar-fixed.navbar-default .ct-img-show  {  
 	display: inline; }*/
   .navbar-scrolled .navbar-fixed.navbar-default .navbar-nav > li > a {
-    color: #fff;
+    color: #fff ;
 	font-weight: 500; 
 	padding-top: 1px;}
   .navbar-scrolled .navbar-fixed.navbar-default .navbar-nav > li:hover > a, .navbar-scrolled .navbar-fixed.navbar-default .navbar-nav > li:focus > a, .navbar-scrolled .navbar-fixed.navbar-default .navbar-nav > li:active > a {
-    color: #000000; }
+    color: #000000 !important; }
   .navbar-scrolled .navbar-fixed.navbar-default .navbar-panel:after {
     background-color: #E8E8E8; }
   .navbar-scrolled .navbar-fixed.navbar-default .navbar-panel:last-child:after {
@@ -6089,7 +6089,7 @@ p {
   right: 0; }
 
 .ct-footer {
-  background-color: #000; 
+  background-color: #050002; 
   font-family: 'Lato', sans-serif; 
   font-weight: 700; }
   .ct-footer .ct-prefooter {
@@ -7978,7 +7978,7 @@ table.tablesaw-colored tbody tr:nth-child(2n) {
 /* Common styles for overlay and modal type (fixed morph) */
 .morph-button-fixed,
 .morph-button-fixed .morph-content {
-	width: 175px;
+	/*width: 175px;*/
 	height: 75px;
     
 }
@@ -8151,6 +8151,7 @@ table.tablesaw-colored tbody tr:nth-child(2n) {
 	.morph-button-fixed .morph-content {
 		width: 200px;
 		height: 80px;
+        margin-left: 35% !important;
 	}
 
 	.morph-button-fixed > button {
@@ -8766,8 +8767,12 @@ table.tablesaw-colored tbody tr:nth-child(2n) {
 .headerList{
 	color:black !important;		
 }
-mycontent-left {
+.mycontent-left {
   border-right: 1px solid #333;
+}
+#footerContainer{
+    padding-left: 0px !important;
+    padding-right: 0ox !important;
 }
 
 
