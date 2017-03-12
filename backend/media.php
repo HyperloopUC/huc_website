@@ -1,5 +1,10 @@
 <html>
 <head>
+    <link rel="shortcut icon" href="../assets/images/HyperloopIcon.png">
+    <link rel="apple-touch-icon" href="../assets/images/HyperloopIcon.png">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 <?php
     if(!isset($_SESSION['username']))
     {
@@ -16,9 +21,16 @@
 ?>
     
 </head>
-<body>
-    <h1>Media Page</h1>
-
+<body style="font-family: 'Lato', sans-serif;">
+    
+    <div style="text-align:center;margin-top:20px;"> 
+    <h1 style="color:#e00122;font-family: 'Lato', sans-serif;">Media Page</h1>
+    </div>
+    <br>
+    
+    <a href="addNewMedia.php"><button class="btn" style="padding-top: 5px;padding-bottom: 5px;margin: 10px;">Add New Media</button></a>
+    <hr/>
+    <br/>
 <?php
     
     if(isset($_GET['d']))
@@ -49,7 +61,7 @@ $result = $conn->query($sql);
 if( $result->num_rows > 0 )
 {
   ?>
-    <table border="1px">
+    <table border="1px" style="margin:5px">
     <?php
 
 
@@ -66,6 +78,7 @@ while($row = $result->fetch_assoc())
             <th>Publishing Date</th>
             <th>Web Link</th>
             <th>Logo</th>
+            <th>Image type</th>
             <th>Action</th>
             </tr>
             <?php
@@ -77,20 +90,21 @@ while($row = $result->fetch_assoc())
             <td><?php echo $row['title']; ?></td>
             <td><?php echo $row['publishingDate']; ?></td>
             <td><?php echo $row['webLink']; ?></td>
-            <td><?php echo $row['logoLink']; ?></td>
+            <td style="width:100px;"><?php echo $row['logoLink']; ?></td>
+            <td><?php echo $row['imageType']; ?></td>
             <td><?php  
 				if($row['showFlag'] == 'true')
 				{
 					?>
                 
-                    <a href='media.php?d=<?php echo $row['mediaId']?>'><button>Delete</button></a>
+                    <a href='media.php?d=<?php echo $row['mediaId']?>'><button class="btn btn-danger" style="padding-top: 5px;padding-bottom: 5px;margin: 10px;background-color:#e00122">Delete</button></a>
                     <?php
 				}
 				else
 				{
 					?>
                 
-                    <a href='media.php?p=<?php echo $row['mediaId']?>'><button>Put Back</button></a>
+                    <a href='media.php?p=<?php echo $row['mediaId']?>'><button class="btn" style="padding-top: 5px;padding-bottom: 5px;margin: 10px;">Put Back</button></a>
                     <?php
 				}
 			 ?></td>
@@ -107,8 +121,6 @@ while($row = $result->fetch_assoc())
 
     ?>
 
-    <br>
-    <hr/>
-    <a href="addNewMedia.php"><button>Add New Media</button></a>
+    
 </body>
 </html>

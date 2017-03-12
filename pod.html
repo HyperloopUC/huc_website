@@ -29,11 +29,6 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('#nav_pod').localScroll(800);
-	
-		//.parallax(xPosition, speedFactor, outerHeight) options:
-		//xPosition - Horizontal position of the element
-		//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-		//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 		$('#intro').parallax("50%", 0.1);
 	$('#second').parallax("50%", 0.1);
 	$('.bg').parallax("50%", 0.4);
@@ -45,51 +40,43 @@
   <body class="cssAnimate">
     <div id="ct-js-wrapper" class="ct-pageWrapper">
       <div id="header"></div>
-      <!--<header data-background="assets/images/content/slider-bg.jpg" data-height="34%" data-parallax="50" class="ct-u-display-tablex text-uppercase text-center">
-        <div class="inner">
-          <h1 class="h1 ct-u-color- -white ct-u-margin-top-20">OUR POD</h1>
-        </div>
-      </header>-->
       <header>
         <div>
           <div style="background-size: cover" data-background="assets/images/Renders/desert_with_logo.png" data-parallax="100">
             <div data-height="100%" class="ct-u-display-tablex" >
 				<div class="inner text-uppercase">
 					<div class="container ct-u-color--white text-center">
-					<h1 class="h1" style="font-size: 60px; color: black; font-family: 'Lato', sans-serif">Our Pod</h1>
+					<h1 class="h1 fontHeading" style="font-size: 60px; color: black; ">Our Pod</h1>
 					</div>
 				</div>
             </div>
           </div>
         </div>
-          
-          <a href="#" data-scroll="#armstrong" class="ct-btn-to-section-alt"><i class="fa fa-chevron-down"></i></a>
-          
+          <span class="hover ct-btn-to-section">
+          <a href="#" data-scroll="#armstrong" class="ct-btn-to-section-alt" style="color:#fff;" ><i class="fa fa-angle-down" ></i></a>
+          </span>
     </header>
-	<div class="tablex item testimonial-dsc">
-		<div class="container">
+	<div class="tablex item  whiteGradient paddingTop60 paddingBottom80 testimonial-dsc " style="text-align: center;">
+		<div class="container" >
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1 ">
+				<div class="col-md-10 col-md-offset-1" >
 					<div>
 						<div>
-							<!--
-						  <div class="ct-testimonials-image"><img src="assets/images/Renders/HQ_Structure.png" alt=""/></div>
-						  -->
-						  <div id="armstrong">
-								<p style="text-align: center"><span style="font-size: 20px; font-family: 'Lato', sans-serif; font-weight: 900">"One small step for man, one giant leap for mankind"</span>
-			</br>                    	
-			<span style="color: #e00122; font-size: 18px; font-family: 'Lato', sans-serif; font-weight: 500">Neil Armstrong</span>
-			</br><span style="font-size: 18px; font-family: 'Lato', sans-serif; font-weight: 500">Former professor at the University of Cincinnati</span></p>
-                    	 </br></br>
-                    	 <p style="font-size: 18px; text-align: justify; font-family: 'Lato', sans-serif; font-weight: 500">Keeping these historic words in mind, we respond to the need for a revolution 
+						  <div id="armstrong" >
+								<p style="text-align: center"><span class="fontBody500">"One small step for man, one giant leap for mankind"</span>
+			<br>                    	
+			<span class="fontBody" style="color: #e00122;">Neil Armstrong</span>
+			<br><span class="fontBody">Former professor at the University of Cincinnati</span></p>
+                    	 <br><br>
+                    	 <p class="fontBody">Keeping these historic words in mind, we respond to the need for a revolution 
                     	 in the transportation industry. We are a team of motivated students who plan to bring the future to you. Our concept is not limited by the 
                     	 scope of the competition, but is modular and scalable to a full model which can be used for 
                     	 transporting passengers. The modularity of the design will be beneficial in repair and maintenance 
                     	 of the subsystems while in operation. Musk himself has noted the importance of feasibility. 
                     	 To make the Hyperloop a reality we constantly orient ourselves towards a design that is efficient, 
                     	 scalable, cost-effective, and safe. 
-            </br><p style="text-align: center; font-size: 18px; font-family: 'Lato', sans-serif; font-weight: 500"><span style="color: #e00122">WE ENGINEER BETTER </span> isn’t just our motto, it’s our call to action.</p>
-                    	 		</p>
+            <br><p style="text-align: center; " class="fontBody"><span style="color: #e00122">WE ENGINEER BETTER </span> isn’t just our motto, it’s our call to action.</p>
+                    	 		
 						  </div>
 						  
 						</div>
@@ -100,163 +87,15 @@
 	</div>
 	
         
-		<!--/slider-->
-        	
-      <!--<section class="ct-section ct-u-background- -black">
-        <ul class="ct-js-gallery-filters ct-gallery-filters ct-u-margin-both-0">
-          <li><a href="#" data-filter="*" class="btn btn-motive-o btn-sm active">all</a></li>
-          <li><a href="#" data-filter=".marketing" class="btn btn-motive-o btn-sm">marketing</a></li>
-          <li><a href="#" data-filter=".training" class="btn btn-motive-o btn-sm">training</a></li>
-          <li><a href="#" data-filter=".other" class="btn btn-motive-o btn-sm">other</a></li>
-        </ul>
-      </section>-->
-      
-      <!--<div id="ct-gallery" class="ct-gallery ct-js-gallery ct-gallery- -col5 lightGallery"><a href="assets/images/content/portfolio-big-image.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image2.jpg">
-          <article class="ct-gallery-item training">
-            <figure><img src="assets/images/content/portfolio-thumbnail2.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image3.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail3.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image4.jpg">
-          <article class="ct-gallery-item training">
-            <figure><img src="assets/images/content/portfolio-thumbnail4.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image5.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail5.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image6.jpg">
-          <article class="ct-gallery-item other">
-            <figure><img src="assets/images/content/portfolio-thumbnail6.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image7.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail7.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image8.jpg">
-          <article class="ct-gallery-item other">
-            <figure><img src="assets/images/content/portfolio-thumbnail8.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image9.jpg">
-          <article class="ct-gallery-item other">
-            <figure><img src="assets/images/content/portfolio-thumbnail9.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image10.jpg">
-          <article class="ct-gallery-item training">
-            <figure><img src="assets/images/content/portfolio-thumbnail10.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image2.jpg">
-          <article class="ct-gallery-item training">
-            <figure><img src="assets/images/content/portfolio-thumbnail2.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image3.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail3.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image4.jpg">
-          <article class="ct-gallery-item training">
-            <figure><img src="assets/images/content/portfolio-thumbnail4.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image5.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail5.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a>
-      </div>-->
-      <!--Testimonial-->
+		
 	<article id="aerodynamics">
-		<section data-background="assets/images/Renders/pod_fan.png" data-height="10%" data-parallax="100" class="testimonial-section" style="background-size: auto 100%">
-			<div class="testimonial-header" style="font-family: 'Lato', sans-serif; font-weight: 900; font-type: bold">
+		<section data-background="assets/images/Renders/pod_fan.png" data-height="10%" data-parallax="100" class="testimonial-section " style="background-size: auto 100%">
+			<div class="testimonial-header fontBody900" >
 				<h2>Aerodynamics</h2>
 		</div>
 	</section>
 
-	<div class="tablex item testimonial-dsc">
+	<div class="tablex item  whiteGradient paddingTop60 paddingBottom80 testimonial-dsc ">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 ">
@@ -266,11 +105,11 @@
 						  <div class="ct-testimonials-image"><img src="assets/images/Renders/HQ_Structure.png" alt=""/></div>
 						  -->
 						  <div>
-								<p style="font-size: 18px; text-align: justify; font-family: 'Lato', sans-serif; font-weight: 500">USP and key details: Counter rotating fans (CRfan)  
+								<p class="fontBody">USP and key details: Counter rotating fans (CRfan)  
 								bypass flow through the pod while balancing torque, providing a higher pressure ratio, 
 								lesser power requirement and lesser weight. The flow is bypassed through a partial 
 								annular nozzle which keeps the flow attached while providing a flush finish on the pod floor. 
-								The cold air from the nozzle is used to cool the braking system.</br></br>
+								The cold air from the nozzle is used to cool the braking system.<br><br>
 
 								CR fan configuration with the partial annular nozzle will be looked into more detail in future
 								 development. 
@@ -289,12 +128,12 @@
 	
 	<article id="structures">
 		<section data-background="assets/images/Renders/space_frame.jpg" data-height="10%"  data-parallax="100" class="testimonial-section" style="background-size: auto 100%">
-			<div class="testimonial-header" style="font-family: 'Lato', sans-serif; font-weight: 900; font-type: bold">
+			<div class="testimonial-header fontBody900">
 				<h2>Structures</h2>
 		</div>
 	</section>
 
-	<div class="tablex item testimonial-dsc">
+	<div class="tablex item   whiteGradient paddingTop60 paddingBottom80 testimonial-dsc">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 ">
@@ -304,14 +143,14 @@
 						  <div class="ct-testimonials-image"><img src="assets/images/Renders/HQ_Structure.png" alt=""/></div>
 						  -->
 						  <div>
-								<p style="font-size: 18px; text-align: justify; font-family: 'Lato', sans-serif; font-weight: 500"> This hyperloop pod design has a modular structure with a 
+								<p class="fontBody"> This hyperloop pod design has a modular structure with a 
 								disjoint engine and payload area. The payload structure is strong enough to sustain the 
 								crash loads while the engine structure is designed to buckle and act as an impact 
 								attenuator during a crash thus protecting the payload.
 								 The crash criteria is assumed considering the g forces that a human body can tolerate 
 								 during a crash.
 									A common mount is designed for the levitation and its fail safe that prevents the levitation device from ever crashing on the track.
-									</br></br>
+									<br><br>
 							Modular structure with engine area and passenger area being separate. The passenger area designed for strength while the engine area has been designed for lower buckling strength and hence acts as crumple zone in case of crash. 
 
 								</p>
@@ -326,12 +165,12 @@
 	</article>
 	<article id="electronics">
 		<section data-background="assets/images/Renders/HQ_BrakeAssem4.png" data-height="10%" data-parallax="100" class="testimonial-section" style="background-size: auto 100%">
-			<div class="testimonial-header" style="font-family: 'Lato', sans-serif; font-weight: 900; font-type: bold">
+			<div class="testimonial-header fontBody900" >
 				<h2>Electronics</h2>
 		</div>
 	</section>
 
-	<div class="tablex item testimonial-dsc">
+	<div class="tablex item   whiteGradient paddingTop60 paddingBottom80 testimonial-dsc">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 ">
@@ -341,7 +180,7 @@
 						  <div class="ct-testimonials-image"><img src="assets/images/Renders/HQ_Structure.png" alt=""/></div>
 						  -->
 						  	<div>
-								<p style="font-size: 18px; text-align: justify; font-family: 'Lato', sans-serif; font-weight: 500">Our transponics system is responsible for the design and 
+								<p class="fontBody">Our transponics system is responsible for the design and 
 								development of levitation, electrical and electronic systems for the pod. These include 
 								electromagnetic, electric circuit, sensor integration and embedded software sub-systems. 
 								Magnetic levitation is achieved using the Arx Pax hover engines. Military grade Inertial 
@@ -359,12 +198,12 @@
 	</article>
 	<article id="controls">
 			<section data-background="assets/images/Renders/HQ_Structure_top.png" data-height="10%" data-parallax="100" class="testimonial-section" style="background-size: auto 100%">
-				<div class="testimonial-header" style="font-family: 'Lato', sans-serif; font-weight: 900; font-type: bold">
+				<div class="testimonial-header fontBody900" >
 					<h2>Dynamics and Controls</h2>
 			</div>
 		</section>
 
-		<div class="tablex item testimonial-dsc">
+		<div class="tablex item   whiteGradient paddingTop60 paddingBottom80 testimonial-dsc ">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 ">
@@ -374,7 +213,7 @@
 							  <div class="ct-testimonials-image"><img src="assets/images/Renders/HQ_Structure.png" alt=""/></div>
 							  -->
 								<div>
-									<p style="font-size: 18px; text-align: justify; font-family: 'Lato', sans-serif; font-weight: 500">We understand the dynamics of the pod and building 
+									<p class="fontBody">We understand the dynamics of the pod and building 
 									mathematical models of the pod. Using these models, we develop the brain or the 
 									control system for the pod. The control system takes inputs from the sensors, 
 									processes them and provides necessary control outputs to actuators that ensure 
@@ -404,7 +243,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/form/js/contact-form.js"></script>
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
- <script> 
+    <script> 
     $(function(){
       $("#footerContainer").load("footer.html"); 
     });
@@ -412,6 +251,7 @@
 		$("#header").load("header.html");
 	});
     </script> 
+    </div>
 
   </body>
 </html>

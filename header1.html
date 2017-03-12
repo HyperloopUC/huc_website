@@ -1,24 +1,19 @@
-<nav class="ct-nav">
-        <div class="navbar ct-navbar-style2 navbar-fixed text-center">
-          <!--<div class="navbar-header"><a href="index.html" class="navbar-brand navbar-panel"><img src="assets/images/HYPERLOOP%20-logo.png" alt="" class="ct-img"></a>
-            <ul class="list-inline list-unstyled navbar-panel">
-                <li> <a href="https://twitter.com/createitpl">
-							<i style="color: #00aced" class="fa fa-twitter fa-fw"></i> <span class="network-name"></span>
-							</a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/createITpl">
-							<i style="color: #3b5998" class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
-                    </li>
-                    <li>
-                        <a href="#">
-							<i style="color: #ded1c1" class="fa fa-instagram fa-fw"></i> <span class="network-name"></span></a>
-                    </li>
-            </ul>
+<style>
+.navbar-scrolled .navbar-fixed.navbar-default .navbar-nav > li > a {
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 0px;
+    line-height: 5px;
+}
+</style>
 
-          </div>-->
+<nav class="ct-nav">
+        <div class="navbar navbar-default navbar-fixed text-center">
           
-          <div class="navbar-header"><a href="index.html" class="navbar-brand navbar-panel"><img src="assets/images/logo_progress.png" alt="" class="ct-img"></a>
+          
+          <div class="navbar-header">
+              <a href="index.html" class="navbar-brand navbar-panel"><img src="assets/images/logo_progress.png" alt="" class="ct-img"></a>
             <ul class="ct-socials list-inline list-unstyled navbar-panel">
               <li class="ct-socials__itemfacebook"><a href="https://www.facebook.com/hyperloopuc" target="__blank"><i class="fa fa-facebook"></i></a></li>
               <li class="ct-socials__itemtwitter"><a href="https://twitter.com/hyperloopuc" target="__blank"><i class="fa fa-twitter"></i></a></li>
@@ -28,25 +23,47 @@
 -->            </ul>
           </div>
           
-          <ul class="nav navbar-nav navbar-right navbar-fw" style="font-size: 20%; font-family: 'Lato', sans-serif; color: #fff">
-            <li><a href="index.html" style="color=#fff">Home</a>
+          <ul class="nav navbar-nav navbar-right navbar-fw"  id="main-nav" style="font-size: 20%; font-family: 'Open Sans', sans-serif; color: #fff">
+            <li><a href="index.html" style="color:#444">Home</a>
             </li>
-            <li><a href="pod.html" style="color=#fff">Pod</a>
+            <li><a href="pod.html" style="color:#444">Pod</a>
             </li>
-            <li><a href="sponsors.html" style="color=#fff">Sponsors</a>
+            <li><a href="sponsors.html" style="color:#444">Sponsors</a>
             </li>
-            <li><a href="donate.html" style="color=#fff">Donate</a>
+<!--
+            <li><a href="donate.html" style="color:#444">Donate</a>
             </li>
+-->
              <!-- 
             <li><a href="blog-single.html">Blog</a></li>-->  
-            <li><a href="media.php" style="color=#fff">Media</a>
+            <li class="dropdown dropdown-fw" style="height:35px;"><a style="color:#444">About Us</a>
+                <ul class="dropdown-menu" style="left:5%;!important;margin-top:2px">
+                <li><a href="media.php">Media</a>
+                </li>
+                <li><a href="donate.html">Donate</a>
+                </li>
+                <li><a href="team.html" >Team</a>
+                </li>
+              </ul>
             </li>
               <!--
 			<li><a href="team.html">Team</a>
             </li>
             -->
+                 <li class="dropdown dropdown-fw"  style="height:35px;"><a style="color:#444">Loop-In</a>
+              <ul class="dropdown-menu" style="right:5%;!important;margin-top:2px">
+                <li><a href="contact.html">Contact</a>
+                </li>
+                <li><a href="sign-up.html" target="__blank">Newsletter</a>
+                </li>
+                <li><a href="blog.php">Blog</a>
+                </li>
+              </ul>
+            </li>
+<!--
             <li><a href="contact.html">Contact</a>
             </li>
+-->
             
           </ul>
         </div>
