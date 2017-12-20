@@ -57,18 +57,57 @@ if( $result->num_rows > 0 )
 while($row = $result->fetch_assoc())
 {
    
-		if($row['showFlag'] == "true")
-		{
+          if($row['showFlag'] == "true")
+          {
             if($count % 3 == 0){
+              ?>
+              <div class="row" style="">
+              <?php
+            } 
+            ?>
+                  <div class="col-md-4">
+              <a href="https://www.wcpo.com/news/insider/uc-is-going-all-in-on-hyperloop-transportation-and-is-looking-to-aid-its-effort-through-research-funding-and-facilities" target="_blank">
+              <div class="text-center mediaDiv fontBody" >
+                  <div>
+                    
+                    <?php echo $row['title']; ?>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="row">
+                      <div class="col-md-4 img-responsive" style="padding-right:5px;padding-left:10px">
+                          <?php
+                              if($row['imageType'] == "square") {
+                          ?>
+                          <img src="<?php echo $row['logoLink']; ?>" height="50px" width="50px"/>
+                          <?php
+                              } else {
+                                  ?>
+                                  <img src="<?php echo $row['logoLink']; ?>" height="50px" width="100px"/>
+                                  <?php
+                              }
+                          ?>
+                      </div>
+                      <div class="col-md-8" style="padding-right:5px;padding-left:5px">
+                          <span class="mediaPublisherName fontBody"><b><?php echo $row['publisherName']; ?></b> </span> <br/>  
+                          <span class="mediaPublisherDate fontBody"><?php echo $row['publishingDate']; ?></span>
+                      </div>
+                  </div>
+              </div>
+              </a>
+              </div>
+              <?php
+              if($count % 3 == 0){
                ?>
                 <div class="row" style="">
                 <?php
             } 
             ?>
                     <div class="col-md-4">
-                <a href="http://time.com/4207248/hyperloop-pod-design-competition/" target="_blank">
+                <a href="https://techcrunch.com/2017/09/05/spacex-opens-applications-for-its-2018-hyperloop-pod-competition/" target="_blank">
                 <div class="text-center mediaDiv fontBody" >
                     <div>
+                      
                        <?php echo $row['title']; ?>
                     </div>
                     <br/>
@@ -98,6 +137,40 @@ while($row = $result->fetch_assoc())
             <?php
             if($count % 3 == 0){
                 ?>
+                <div class="row" style="">
+                <?php
+            } 
+            ?>
+                    <div class="col-md-4">
+                <a href="http://magazine.uc.edu/news/hyperloop.html" target="_blank">
+                <div class="text-center mediaDiv fontBody" >
+                    <div>
+                      
+                       <?php echo $row['title']; ?>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 img-responsive" style="padding-right:5px;padding-left:10px">
+                            <?php
+                                if($row['imageType'] == "square") {
+                            ?>
+                            <img src="<?php echo $row['logoLink']; ?>" height="50px" width="50px"/>
+                            <?php
+                                } else {
+                                     ?>
+                                    <img src="<?php echo $row['logoLink']; ?>" height="50px" width="100px"/>
+                                    <?php
+                                }
+                            ?>
+                        </div>
+                        <div class="col-md-8" style="padding-right:5px;padding-left:5px">
+                            <span class="mediaPublisherName fontBody"><b><?php echo $row['publisherName']; ?></b> </span> <br/>  
+                            <span class="mediaPublisherDate fontBody"><?php echo $row['publishingDate']; ?></span>
+                        </div>
+                    </div>
+                </div>
+                </a>
                 </div>
                 <?php
             }
