@@ -1,0 +1,83 @@
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.main-area {
+	padding: 1em;
+}
+
+.gallery {
+	margin: 0 auto;
+	max-width: 80em;
+}
+
+/* Flex layout */
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	transition: all .2s;
+}
+
+.photo {
+    box-sizing: border-box;
+    /*width: 300px;
+    margin-bottom: 25px;*/
+	padding: 1em;
+}
+
+@media screen and (min-width: 40em) {
+	.photo {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 60em) {
+	.photo {
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 80em) {
+	.photo {
+		width: 25%;
+	}
+}
+
+.photo figure {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+
+.photo img {
+	display: block;
+	width: 100%;
+}
+
+.photo figcaption {
+	position: absolute;
+	box-sizing: border-box;
+	bottom: -4em;
+	width: 100%;
+	padding: 0 1em;
+	background: hsla(0, 0%, 100%, .75);
+	transition: bottom .2s;
+}
+
+.photo h2 {
+	font-size: 1.2em;
+	font-weight: lighter;
+}
+
+.photo{
+	color: black;
+}
+
+.photo:hover figcaption {
+	bottom: 0;
+}

@@ -3,7 +3,6 @@
   src: url("font/icons.eot");
   src: url(".font/icons.eot?#iefix") format('embedded-opentype'), url("font/icons.woff") format('woff'), url("font/icons.ttf") format('truetype'), url("font/icons.svg#icons") format('svg');
 }
-
 .sb-container {
 	position: relative;
 	width: 175px;
