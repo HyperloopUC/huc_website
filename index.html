@@ -48,12 +48,20 @@
 	</script>
 	<script type="text/javascript" src="assets/js/swatch/modernizr.custom.79639.js"></script>
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script> 
+	<!--<script> 
 	$(function(){
 	  $("#page-header").load("header.html"); 
 	  $("#page-footer").load("footer.html"); 
 	});
-	</script> 
+	</script> -->
+			<script>
+			$(function(){
+				$("#footerContainer").load("footer.html"); 
+			});
+		$(function(){
+			$("#header").load("header.html");
+		});
+			</script>
     <script src="assets/js/modernizr.custom.js"></script>
     
   </head>
