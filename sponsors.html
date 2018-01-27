@@ -29,11 +29,6 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('#nav_pod').localScroll(800);
-	
-		//.parallax(xPosition, speedFactor, outerHeight) options:
-		//xPosition - Horizontal position of the element
-		//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-		//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 		$('#intro').parallax("50%", 0.1);
 	$('#second').parallax("50%", 0.1);
 	$('.bg').parallax("50%", 0.4);
@@ -41,69 +36,36 @@
 
 	})
 	</script>
+    <style>
+        h1{
+            font-size: 36px !important;    
+        }
+        
+    </style>
   </head>
   <body class="cssAnimate">
     <div id="ct-js-wrapper" class="ct-pageWrapper">
-      <nav class="ct-nav">
-        <div class="navbar ct-navbar-style2 navbar-fixed text-center">
-        <div class="navbar-header">
-	<a href="index.html" class="navbar-brand navbar-panel"><img src="assets/images/logo_progress.png" alt="" id="logo" class="ct-img"></a>	
-	
-	<!--<a href="index.html" class="navbar-scrolled navbar-brand navbar-panel"><img2 src="assets/images/logo_progress.png" alt="" id="logo2" class="ct-img"></a>-->
-            
-            <ul class="ct-socials list-inline list-unstyled navbar-panel">
-              <li class="ct-socials__itemfacebook"><a href="https://www.facebook.com/hyperloopuc" target="__blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="ct-socials__itemtwitter"><a href="https://twitter.com/hyperloopuc" target="__blank"><i class="fa fa-twitter"></i></a></li>
-              <li class="ct-socials__itemlinkedin"><a href="https://www.linkedin.com/company/hyperloop-uc" target="__blank"><i class="fa fa-linkedin"></i></a></li>
-              <li class="ct-socials__itemnewsletter"><a href="sign-up.html" target="__blank"><i class="fa fa-feed"></i></a></li>
-            </ul>
-            
-          </div>
-         
-          <ul class="nav navbar-nav navbar-right navbar-fw" style="font-size: 18px; font-family: 'Lato', sans-serif; color: #fff">
-            <li><a href="index.html" style="color=#fff">Home</a>
-            </li>
-            <li><a href="pod.html" style="color=#fff">Pod</a>
-            </li>
-            <li><a href="sponsors.html" style="color=#fff">Sponsors</a>
-            </li>
-            <li><a href="donate.html" style="color=#fff">Donate</a>
-            </li>
-             <!-- 
-            <li><a href="blog-single.html">Blog</a></li>  
-            <li><a href="media.html">Media</a>
-            </li>
-			<li><a href="team.html">Team</a>
-            </li>
-            -->
-            <li><a href="contact.html">Contact</a>
-            </li>
-            
-          </ul>
-        </div>
-      </nav>
-      <!--<header data-background="assets/images/content/slider-bg.jpg" data-height="34%" data-parallax="50" class="ct-u-display-tablex text-uppercase text-center">
-        <div class="inner">
-          <h1 class="h1 ct-u-color- -white ct-u-margin-top-20">OUR POD</h1>
-        </div>
-      </header>-->
+      <div id="header"></div>
       <header>
         <div>
           <div style="background-size: cover" data-background="assets/images/Renders/plasma_cutting.jpg" data-height="30%" data-parallax="100">
             <div data-height="100%" class="ct-u-display-tablex" style="opacity: 0.8; background-color: #f5f5f5">
 				<div class="inner text-uppercase">
 					<div class="container ct-u-color--white text-center">
-					<h1 class="h1" style="font-size: 60px; color: black; font-family: 'Lato', sans-serif">Our Sponsors</h1>
+					<h1 class="h1 fontHeading ct-u-margin-bottom-30" style="color: #333; ">Our Sponsors</h1>
+                        <p class="ct-u-margin-bottom-40 fontBody" >We wouldn't have done this without the help and support of our sponsors. We are truly grateful for their commitement to making the world a better place by investing in students working on the challenges of tomorrow. </p>
 					</div>
 				</div>
             </div>
           </div>
         </div>
-          
-          <a href="#" data-scroll="#Sponsors" class="ct-btn-to-section-alt"><i class="fa fa-chevron-down"></i></a>
+          <span class="hover ct-btn-to-section">
+          <a href="#section" data-scroll="#section" class="ct-btn-to-section hover"  style="color:#333;" ><i class="fa fa-angle-down"></i></a>
+              </span>
         
     </header>
         
+<!--
         <article id="Sponsors">
       	<section id="Sponsors" class="ct-section-image-col2" style="text-align: center; background-color: #eeeeee">
         
@@ -111,19 +73,20 @@
             <div class="ct-section-header ct-section-header-decoration-center ct-u-margin-bottom-30">
               <h1 class="h1 about-hyperloop-h1" style="font-family: 'Lato', sans-serif; font-weight: 500">Thank you</h1>
             </div>
-			<p class="ct-u-margin-bottom-40" style="font-size: 18px; font-family: 'Lato', sans-serif">We wouldn't have done this without the help and support of our sponsors. We are truly grateful for their commitement to making the world a better place by investing in students working on the challenges of tomorrow. 
+            
 			</div>
         <div class="clearfix"></div>
       </section>
       </article>
+-->
 
     <!--Sponsors-->
-    <article id="sponsors">
-	   <section id="section" class="ct-section-image-col2" style="text-align: center; margin-top: -3%; background-color: #ffffff">
+    
+	   <section id="section" class="whiteGradient ct-section-image-col2 " style="text-align: center;">
         
-	   <div style="padding-top: 30px">
+	   <div class="ct-section-item-content " style="text-align:center;width:100%;">
 				<div class="ct-section-header ct-section-header-decoration-center ct-u-margin-bottom-30  about-hyperloop-h1">
-				  <h1 class="h1 about-hyperloop-h1" style="font-family: 'Lato', sans-serif; font-weight: 500">Our Sponsors</h1>
+				  <h1 class="h1 about-hyperloop-h1 fontHeading">Our Sponsors</h1>
 				</div>
       <!--<div class="ct-section-header ct-section-header-decoration-center" style="margin-top: 5%">
               <h2 class="h1">Our Sponsors</h2>
@@ -135,339 +98,147 @@
           
             
           <div class="ct-u-margin-bottom-40 ">
-          	<span class="ct-u-margin-bottom-40 "><img src="assets/images/Renders/ceas.png" alt="" width="20%"></span>
+              <span class="ct-u-margin-bottom-40 "><a href="http://www.ceas.uc.edu/" target="__blank"><img src="assets/images/Renders/ceas.png" alt="" width="20%"></a></span>
           	<span style="margin: 0 2%;"></span>
-          	<span class="ct-u-margin-bottom-40 "><img src="assets/images/Renders/Office%20of%20Research.png" alt="" width="20%"></span>
-            <span class="ct-u-margin-bottom-40 "><img src="assets/images/Renders/Office%20of%20the%20President.png" alt="" width="20%"></span>
+                <span class="ct-u-margin-bottom-40 "><a href="http://research.uc.edu/home/officeofresearch/administrativeoffices.aspx" target="__blank"><img src="assets/images/Renders/Office%20of%20Research.png" alt="" width="20%"></a></span>
+                <span class="ct-u-margin-bottom-40 "><a href="https://www.uc.edu/president/the-office.html" target="__blank"><img src="assets/images/Renders/Office%20of%20the%20President.png" alt="" width="20%"></a></span>
             <span style="margin: 0 0%;"></span>
-            <span class="ct-u-margin-bottom-40 "><img src="assets/images/Renders/Office%20of%20the%20provost.png" alt="" width="20%"></span>
+                <span class="ct-u-margin-bottom-40 "><a href="http://www.uc.edu/provost.html" target="__blank"><img src="assets/images/Renders/Office%20of%20the%20provost.png" alt="" width="20%"></a></span>
           </div>	
               
-          
-          
-          
           <div class="ct-u-margin-bottom-40 ">
-          	<span class="ct-u-margin-bottom-40 "><img src="assets/images/Web_logo/CI.png" alt="" width="35%"></span>
+              <span class="ct-u-margin-bottom-40 "><a href="http://www.e-ci.com/" target="__blank"><img src="assets/images/Web_logo/CI-Logo.png" alt="" width="35%"></a></span>
           	<span style="margin: 0 2%;"></span>
-          	<span class="ct-u-margin-bottom-40 "><img src="assets/images/Web_logo/Tristate.png" alt="" width="35%"></span>
+              <span class="ct-u-margin-bottom-40 "><a href="http://www.tristatefabricators.com/" target="__blank"><img src="assets/images/Web_logo/Tristate.png" alt="" width="35%"></a></span>
           	<span style="margin: 0 2%;"></span>
           </div>
           
-          <!--
-          <div class="ct-u-margin-bottom-80 ">
-          	<span class="ct-u-margin-bottom-80 "><a href="index.html"><img src="assets/images/content/logo-section.png" alt="" width="20%"></a></span>
-          	<span style="margin: 0 2%;"></span>
-          	<span class="ct-u-margin-bottom-80 "><a href="index.html"><img src="assets/images/content/logo-section.png" alt="" width="20%"></a></span>
-          	<span style="margin: 0 2%;"></span>
-          	<span class="ct-u-margin-bottom-80 "><a href="index.html"><img src="assets/images/content/logo-section.png" alt="" width="20%"></a></span>
-          	<span style="margin: 0 2%;"></span>
-          	<span class="ct-u-margin-bottom-80 "><a href="index.html"><img src="assets/images/content/logo-section.png" alt="" width="20%"></a></span>
-          </div>
-          -->
           <div class="ct-u-margin-bottom-40 ">
-          	<span class="ct-u-margin-bottom-40 "><img src="assets/images/Web_logo/ev_roberts.png" alt="" width="18%"></span>
+              <span class="ct-u-margin-bottom-40 "><a href="https://www.evroberts.com" target="__blank"><img src="assets/images/Web_logo/ev_roberts.png" alt="" width="18%"></a></span>
           	<span style="margin: 0 2%;"></span>
-          	<span class="ct-u-margin-bottom-40 "><img src="assets/images/Web_logo/ANSYS.png" alt="" width="20%"></span>
+              <span class="ct-u-margin-bottom-40 "><a href="http://ansys.com/" target="__blank"><img src="assets/images/Web_logo/ANSYS.png" alt="" width="20%"></a></span>
           	<span style="margin: 0 2%;"></span>
-            <span class="ct-u-margin-bottom-40 "><img src="assets/images/Web_logo/W&S.png" alt="" width="22%"></span>
+              <span class="ct-u-margin-bottom-40 "><a href="https://www.westernsouthern.com" target="__blank"><img src="assets/images/Web_logo/W&S.png" alt="" width="22%"></a></span>
           </div>
             
           <div class="ct-u-margin-bottom-40 ">
-          	<span class="ct-u-margin-bottom-40 "><img src="assets/images/Renders/CTS_logo_new.gif" alt="" width="10%"></span>
+              <span class="ct-u-margin-bottom-40 "><a href="http://www.custombuiltcrates.com/home/" target="__blank"><img src="assets/images/Web_logo/CBC.png" alt="" width="20%"></a></span>
           	<span style="margin: 0 2%;"></span>
-            <span class="ct-u-margin-bottom-40 "><img src="assets/images/Web_logo/ufb.png" alt="" width="15%"></span>
+                <span class="ct-u-margin-bottom-40 "><a href="https://www.smithersrapra.com" target="__blank"><img src="assets/images/Web_logo/Smithers.jpg" alt="" width="20%"></a></span>
+          	<span style="margin: 0 2%;"></span>
+                <span class="ct-u-margin-bottom-40 "><a href="https://www.uc.edu/sald/student-organization/ufb.html" target="__blank"><img src="assets/images/Web_logo/ufb.png" alt="" width="15%"></a></span>
           </div>
 
           <div class="ct-u-margin-bottom-40 ">
-          	<span class="ct-u-margin-bottom-40 "><img src="assets/images/Web_logo/ucri.png" alt="" width="15%"></span>
+              <span class="ct-u-margin-bottom-40 "><a href="https://www.ucri.org" target="__blank"><img src="assets/images/Web_logo/ucri.png" alt="" width="15%"></a></span>
           	<span style="margin: 0 2%;"></span>
-          	<span class="ct-u-margin-bottom-40 "><img src="assets/images/Web_logo/quickfield.png" alt="" width="10%"></span>	
+              <span class="ct-u-margin-bottom-40 "><a href="http://www.cincinnati-test.com" target="__blank"><img src="assets/images/Renders/CTS_logo_new.gif" alt="" width="7%"></a></span>
+          	<span style="margin: 0 2%;"></span>
+                <span class="ct-u-margin-bottom-40 "><a href="http://www.quickfield.com/" target="__blank"><img src="assets/images/Web_logo/quickfield.png" alt="" width="10%"></a></span>	
           </div>
-          
-          
-          
-          <!--<div data-autoplay="false" data-autoplaySpeed="2000" data-arrows="false" 
-          data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="4" data-items="1" 
-          class="ct-slick ct-js-slick ct-u-margin-bottom-40"
-          style="margin-top: -5%">
-            
-            <div class="tablex item"><img src="assets/images/Web_logo/ufb.png" alt="" width="40%"></div>
-            <div class="tablex item"><img src="assets/images/Web_logo/ucri.png" alt="" width="80%"></div>
-            <div class="tablex item"><img src="assets/images/Web_logo/quickfield.png" alt="" width="40%"></div>-->
-            
-            <!--
-            <div class="tablex item"><img src="assets/images/content/company-logo5.png" alt=""></div>
-            <div class="tablex item"><img src="assets/images/content/company-logo6.png" alt=""></div>
-            -->
           </div>
           
           
         </div>
         
       </section>
-      </section>
-      </article>
+      
 
-    <article id="contact_us">
-        <section id="contact_us" style="background-color: #eeeeee; margin-top: 1%" data-height="25%" data-parallax="50" class="tablex">
-        <!--<div class="ct-section ct-section-top">
-          
-        </div>-->
-        <div class="ct-section" style="padding-top: 30px">
-          <div class="container" >
-            <div class="ct-section-header ct-section-header-decoration-center ct-u-margin-bottom-30">
-                <span class="h4 ct-u-color--gray" style="font-family: 'Lato', sans-serif; font-weight: 500">Get in touch to</span>
-              <h2 class="h1" style="color: #000000; font-family: 'Lato', sans-serif; font-weight: 500">Become an Official sponsor</h2>
+    
+       
+        <section id="contact_us" class="whiteGradient ct-section-image-col2 " style="text-align: center;">
+        
+	   <div class="ct-section-item-content " style="text-align:center;width:100%;">
+            <div class="ct-section-header ct-section-header-decoration-center ct-u-margin-bottom-30" >
+                <span class="h4 ct-u-color--gray fontBody500 " >Get in touch to</span>
+              <h2 class="h1 fontHeading" style="color: #000000;">Become an Official sponsor</h2>
             </div>
-                  
-                  <p class="text-center" style="font-size: 18px; font-family: 'Lato', sans-serif; padding-top: 40px">To learn more about the benifits Hyperloop UC can offer, please email us at <i style="color: #E00122"><a href="mailto:info@hyperloopuc.com">info@hyperloopuc.com</a></i>
+                  <div class="row">
+        <form method="post" action="assets/mail/contact_me1.php"  id="contactfrm" role="form" >
+          <div class="col-sm-4">
+            <div class="form-group">
+              <!--<label for="name" style="font-family: 'Lato', sans-serif;">Name</label>-->
+              <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)" required>
+            </div>
+            <div class="form-group">
+              <!--<label for="email" style="font-family: 'Lato', sans-serif;">Email</label>-->
+              <input type="text" class="form-control" name="company" id="company" placeholder="Enter Company Name"   title="Please enter a valid company name" required>
+             
+            </div>
+            <div class="form-group">
+              <!--<label for="email" style="font-family: 'Lato', sans-serif;">Email</label>-->
+              <input type="email" class="form-control" name="email" id="email" placeholder="Enter email"   title="Please enter a valid email address" required>
+             
+            </div>
+            <div class="form-group">
+              <!--<label for="comments" style="font-family: 'Lato', sans-serif;">Comments</label>-->
+              <textarea name="comments" class="form-control" id="comments" cols="3" rows="5"  placeholder="Enter your message…" title="Please enter your message (at least 10 characters)" required></textarea><br>
+                 <div class="col-lg-12 text-center">
+                    <div id="success" class="fontBody" style="color: #E00122"></div>
+                   <br/>
+               <input type="submit" value="Submit Message" class="btn btn-danger-o-style2 btn-sm fontBody" style="opacity: 1; width: auto; ">
+                    
+                </div>
+            </div>
+            
+          </div>
+         <div class="col-lg-12 text-center">
+                    <div id="success"></div>
+         </div>
+           
+        </form>
+                  <p class="text-center" style="font-size: 18px; font-family: 'Lato', sans-serif; padding-top: 40px">To learn more about the benifits Hyperloop UC fill the form <br>or email us at <i style="color: #E00122"><a href="mailto:info@hyperloopuc.com">info@hyperloopuc.com</a></i></p>
               
                   <p class="text-center" style="font-size: 18px; font-family: 'Lato', sans-serif; padding-top: 40px">Join the revolution!
                   </p>
               
-                </form>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
+            
             <div class="clearfix"></div>
       </section>
-    </article>
+    
 
 
 <!-- Footer-->
       <footer class="ct-footer" >
-        <div class="ct-prefooter">
-          <div class="container">
-            <ul class="ct-socials-full-width list-inline">
-              <li class="ct-socials__itemfacebook"><a href="https://www.facebook.com/hyperloopuc" target="__blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="ct-socials__itemtwitter"><a href="https://twitter.com/hyperloopuc" target="__blank"><i class="fa fa-twitter"></i></a></li>
-              <li class="ct-socials__itemlinkedin"><a href="https://www.linkedin.com/company/hyperloop-uc" target="__blank"><i class="fa fa-linkedin"></i></a></li>
-              <li class="ct-socials__itemnewsletter"><a href="sign-up.html" target="__blank"><i class="fa fa-feed"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="ct-postfooter">
-          <div class="container" style="text-align: center;">
-            <div class="ct-footer-navigation">
-            	<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%; color: #ffffff"><a href="index.html">Home</a>
-						</li>
-						<div><a href="index.html">Index</a>
-						</div>
-						<div><a href="index.html#Hyperloop">Hyperloop</a>
-						</div>
-						<div><a href="index.html#HyperloopUC">Hyperloop UC</a>
-						</div>
-						<div><a href="index.html#sponsor">Sponsors</a>
-						</div>
-						
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%; color: #ffffff"><a href="index.html">Pod</a>
-						</li>
-						<div style="border-left: solid #444444 1px; "><a href="pod.html#aerodynamics">Aerodynamics</a>
-						</div>
-						<div style="border-left: solid #444444 1px; "><a href="pod.html#structures">Structures</a>
-						</div>
-						<div style="border-left: solid #444444 1px; "><a href="pod.html#electronics">Electronics</a>
-						</div>
-						<div style="border-left: solid #444444 1px; "><a href="pod.html#controls">Controls</a>
-						</div>
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%; color: #ffffff"><a href="sponsors.html">Sponsors</a>
-						</li>
-						<div style="border-left: solid #444444 1px; "><a href="sponsors.html#thanks">Thank You</a>
-						</div>
-						<div style="border-left: solid #444444 1px; "><a href="sponsors.html#logos">Our Sponsors</a>
-						</div>
-						<div style="border-left: solid #444444 1px; "><a href="sponsors.html#sponsor_us">Sponsor Us</a>
-						</div>
-						<div style="border-left: solid #444444 1px; height: 24px;">
-						</div>
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-						<li class="text-uppercase" style="font-size: 150%; color: #ffffff"><a href="donate.html">Donate</a>
-						</li>
-						<div style="border-left: solid #444444 1px; "><a href="donate.html#donate_text">Support Us</a>
-						</div>
-						<div style="border-left: solid #444444 1px; height: 72px;">
-						</div>
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-						<li class="text-uppercase" style="font-size: 150%; color: #ffffff"><a href="contact.html">Contact</a>
-						</li>
-						<div style="border-left: solid #444444 1px; "><a href="contact.html#contactus_form">Get in Touch</a>
-						</div>
-						<div style="border-left: solid #444444 1px; height: 72px;">
-						</div>
-					</ul>
-				</div>
-				<!--
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%"><a href="index.html">Home</a>
-						</li>
-						<div ><a href="index.html#aboutUs">About Us</a>
-						</div>
-						<div><a href="index.html#journey">Journey</a>
-						</div>
-						<div><a href="index.html#sponsor">Sponsors</a>
-						</div>
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%"><a href="index.html">Home</a>
-						</li>
-						<div ><a href="index.html#aboutUs">About Us</a>
-						</div>
-						<div><a href="index.html#journey">Journey</a>
-						</div>
-						<div><a href="index.html#sponsor">Sponsors</a>
-						</div>
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%"><a href="index.html">Home</a>
-						</li>
-						<div ><a href="index.html#aboutUs">About Us</a>
-						</div>
-						<div><a href="index.html#journey">Journey</a>
-						</div>
-						<div><a href="index.html#sponsor">Sponsors</a>
-						</div>
-						
-					</ul>
-				</div>
-				-->
-            </div>
-          </div>
-          <div class="ct-footer-copyright">
-			  <div class="container" style="padding-left: 2%;">
-			  	<span style="padding-right: 1%; color: rgba(255, 255, 255, 0.5);">Follow &nbsp;  Us</span><span style="padding-right: 1%;">|</span>
-				<span style="padding-right: 2%"><a href="https://www.facebook.com/hyperloopuc" target="__blank">Facebook</a></span>
-				<span style="padding-right: 2%"><a href="https://twitter.com/hyperloopuc" target="__blank">Twitter</a></span>
-				<span style="padding-right: 2%"><a href="https://www.linkedin.com/company/hyperloop-uc" target="__blank">LinkedIn</a></span>
-				<span style="float: right;">&copy; 2016 <span style="color: #E00122;">Hyperloop UC</span>. All rights reserved.</span>
-			  </div>
-          	  
-          
-            </div>
-        </div>
+        
+          <div class="container" id="footerContainer">
+            
+       
+         </div>
       </footer>
-    </div>
-    
-    
-    
-    
     <!-- Mobile Menu //-->
     
-    <div class="ct-menu-mobile">
-      <div class="ct-menu-body">
-        <div class="ct-menu-button ct-js-menu-button"></div>
-        <div class="ct-menu-inner">
-          <div class="ct-menu-logo"><a href="index.html"><img src="assets/images/Renders/logo_whiteUC_1.png" alt=""></a></div>
-          
-          <div class="ct-menu-contact"></div>
-          <!--
-          <div class="ct-menu-user-panel">
-            <div class="ct-panel-left"><a data-toggle="modal" data-target="#modal_login"><i class="fa fa-power-off"></i>login</a></div>
-            <div class="ct-panel-right"><a data-toggle="modal" data-target="#modal_register"><i class="fa fa-plus"></i>register</a></div>
-            <div class="clearfix"></div>
-          </div>
-          
-          <div class="ct-menu-search">
-            <input type="text" Placeholder="Search ..." class="form-control input-lg">
-          </div>
-          -->
-          <ul class="ct-menu-mobile-nav ct-js-menu-mobile-nav">
-            <!--<li class="dropdown dropdown-fw"><a>Home</a>
-              <ul class="dropdown-menu">
-                <li><a href="coach.html">coach</a>
-                </li>
-                <li><a href="speaker.html">speaker</a>
-                </li>
-                <li><a href="training.html">training</a>
-                </li>
-                <li><a href="online-content.html">online content</a>
-                </li>
-                <li><a href="coming-soon.html">coming soon</a>
-                </li>
-                <li><a href="index.html">corporate</a>
-                </li>
-              </ul>
-            </li>-->
-            <li><a href="index.html" style="color=#fff">Home</a>
-            </li>
-            <li><a href="pod.html" style="color=#fff">Pod</a>
-            </li>
-            <li><a href="sponsors.html" style="color=#fff">Sponsors</a>
-            </li>
-            <li><a href="donate.html" style="color=#fff">Donate</a>
-            </li>
-            <li><a href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <ul class="ct-socials list-inline list-unstyled" style="padding-top: 5%">
-              <li class="ct-socials__itemfacebook"><a href="https://www.facebook.com/hyperloopuc" target="__blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="ct-socials__itemtwitter"><a href="https://twitter.com/hyperloopuc" target="__blank"><i class="fa fa-twitter"></i></a></li>
-              <li class="ct-socials__itemlinkedin"><a href="https://www.linkedin.com/company/hyperloop-uc" target="__blank"><i class="fa fa-linkedin"></i></a></li>
-              <li class="ct-socials__itemnewsletter"><a href="sign-up.html" target="__blank"><i class="fa fa-feed"></i></a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- JavaScripts-->
     <script src="assets/js/sella.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/form/js/contact-form.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?"></script>
-    <script>
-      var map, bounds, marker, mapStyle;
-      var mapSelector = $(".ct-js-googleMap");
-      var marker_address = mapSelector.attr("data-address");
-      var draggable = true;
-      if (device_width <= 767){
-        draggable = false;
-      }
-      mapStyle = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#425a68"},{"visibility":"on"}]}]
-      map = new google.maps.Map(mapSelector[0], {
-        center: new google.maps.LatLng(0,0),
-        mapTypeId: google.maps.MapTypeId.ROADMAP, //MapTypeId.ROADMAP, MapTypeId.SATELLITE, MapTypeId.HYBRID, MapTypeId.TERRAIN
-        styles: mapStyle,
-        scrollwheel: false,
-        draggable: true,
-        zoom: 15
-      });
-      bounds = new google.maps.LatLngBounds();
-      var geocoder = new google.maps.Geocoder();
-      geocoder.geocode({'address': marker_address}, function(results, status) {
-        if (status === google.maps.GeocoderStatus.OK) {
-          marker = new google.maps.Marker({
-            position : new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng()),
-            map : map,
-            icon: "../assets/images/content/marker.png"
-          });
-      
-          bounds.extend(marker.position);
-          map.setCenter(results[0].geometry.location);
-        } else {
-          alert('Geocode was not successful for the following reason: ' + status);
+    <script> 
+        var s = getParameterByName('s');
+        if(s=="sent"){
+            $("#success").html("Your message has been sent successfully.");
         }
-      });
-    </script>
+    function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    $(function(){
+      $("#footerContainer").load("footer.html"); 
+    });
+	$(function(){
+		$("#header").load("header.html");
+	});
+    </script> 
+      </div>
   </body>
 </html>

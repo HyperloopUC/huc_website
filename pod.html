@@ -29,11 +29,6 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('#nav_pod').localScroll(800);
-	
-		//.parallax(xPosition, speedFactor, outerHeight) options:
-		//xPosition - Horizontal position of the element
-		//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-		//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 		$('#intro').parallax("50%", 0.1);
 	$('#second').parallax("50%", 0.1);
 	$('.bg').parallax("50%", 0.4);
@@ -44,89 +39,44 @@
   </head>
   <body class="cssAnimate">
     <div id="ct-js-wrapper" class="ct-pageWrapper">
-      <nav class="ct-nav">
-        <div class="navbar ct-navbar-style2 navbar-fixed text-center">
-        <div class="navbar-header">
-	<a href="index.html" class="navbar-brand navbar-panel"><img src="assets/images/logo_progress.png" alt="" id="logo" class="ct-img"></a>	
-	
-	<!--<a href="index.html" class="navbar-scrolled navbar-brand navbar-panel"><img2 src="assets/images/logo_progress.png" alt="" id="logo2" class="ct-img"></a>-->
-            
-            <ul class="ct-socials list-inline list-unstyled navbar-panel">
-              <li class="ct-socials__itemfacebook"><a href="https://www.facebook.com/hyperloopuc" target="__blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="ct-socials__itemtwitter"><a href="https://twitter.com/hyperloopuc" target="__blank"><i class="fa fa-twitter"></i></a></li>
-              <li class="ct-socials__itemlinkedin"><a href="https://www.linkedin.com/company/hyperloop-uc" target="__blank"><i class="fa fa-linkedin"></i></a></li>
-              <li class="ct-socials__itemnewsletter"><a href="sign-up.html" target="__blank"><i class="fa fa-feed"></i></a></li>
-            </ul>
-            
-          </div>
-         
-          <ul class="nav navbar-nav navbar-right navbar-fw" style="font-size: 18px; font-family: 'Lato', sans-serif; color: #fff">
-            <li><a href="index.html" style="color=#fff">Home</a>
-            </li>
-            <li><a href="pod.html" style="color=#fff">Pod</a>
-            </li>
-            <li><a href="sponsors.html" style="color=#fff">Sponsors</a>
-            </li>
-            <li><a href="donate.html" style="color=#fff">Donate</a>
-            </li>
-             <!-- 
-            <li><a href="blog-single.html">Blog</a></li>  
-            <li><a href="media.html">Media</a>
-            </li>
-			<li><a href="team.html">Team</a>
-            </li>
-            -->
-            <li><a href="contact.html">Contact</a>
-            </li>
-            
-          </ul>
-        </div>
-      </nav>
-      <!--<header data-background="assets/images/content/slider-bg.jpg" data-height="34%" data-parallax="50" class="ct-u-display-tablex text-uppercase text-center">
-        <div class="inner">
-          <h1 class="h1 ct-u-color- -white ct-u-margin-top-20">OUR POD</h1>
-        </div>
-      </header>-->
+      <div id="header"></div>
       <header>
         <div>
           <div style="background-size: cover" data-background="assets/images/Renders/desert_with_logo.png" data-parallax="100">
             <div data-height="100%" class="ct-u-display-tablex" >
 				<div class="inner text-uppercase">
 					<div class="container ct-u-color--white text-center">
-					<h1 class="h1" style="font-size: 60px; color: black; font-family: 'Lato', sans-serif">Our Pod</h1>
+					<h1 class="h1 fontHeading" style="font-size: 60px; color: black; ">Our Pod</h1>
 					</div>
 				</div>
             </div>
           </div>
         </div>
-          
-          <a href="#" data-scroll="#armstrong" class="ct-btn-to-section-alt"><i class="fa fa-chevron-down"></i></a>
-          
+          <span class="hover ct-btn-to-section">
+          <a href="#" data-scroll="#armstrong" class="ct-btn-to-section-alt" style="color:#fff;" ><i class="fa fa-angle-down" ></i></a>
+          </span>
     </header>
-	<div class="tablex item testimonial-dsc">
-		<div class="container">
+	<div class="tablex item  whiteGradient paddingTop60 paddingBottom80 testimonial-dsc " style="text-align: center;">
+		<div class="container" >
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1 ">
+				<div class="col-md-10 col-md-offset-1" >
 					<div>
 						<div>
-							<!--
-						  <div class="ct-testimonials-image"><img src="assets/images/Renders/HQ_Structure.png" alt=""/></div>
-						  -->
-						  <div id="armstrong">
-								<p style="text-align: center"><span style="font-size: 20px; font-family: 'Lato', sans-serif; font-weight: 900">"One small step for man, one giant leap for mankind"</span>
-			</br>                    	
-			<span style="color: #e00122; font-size: 18px; font-family: 'Lato', sans-serif; font-weight: 500">Neil Armstrong</span>
-			</br><span style="font-size: 18px; font-family: 'Lato', sans-serif; font-weight: 500">Former professor at the University of Cincinnati</span></p>
-                    	 </br></br>
-                    	 <p style="font-size: 18px; text-align: justify; font-family: 'Lato', sans-serif; font-weight: 500">Keeping these historic words in mind, we respond to the need for a revolution 
+						  <div id="armstrong" >
+								<p style="text-align: center"><span class="fontBody500">"One small step for man, one giant leap for mankind"</span>
+			<br>                    	
+			<span class="fontBody" style="color: #e00122;">Neil Armstrong</span>
+			<br><span class="fontBody">Former professor at the University of Cincinnati</span></p>
+                    	 <br><br>
+                    	 <p class="fontBody">Keeping these historic words in mind, we respond to the need for a revolution 
                     	 in the transportation industry. We are a team of motivated students who plan to bring the future to you. Our concept is not limited by the 
                     	 scope of the competition, but is modular and scalable to a full model which can be used for 
                     	 transporting passengers. The modularity of the design will be beneficial in repair and maintenance 
                     	 of the subsystems while in operation. Musk himself has noted the importance of feasibility. 
                     	 To make the Hyperloop a reality we constantly orient ourselves towards a design that is efficient, 
                     	 scalable, cost-effective, and safe. 
-            </br><p style="text-align: center; font-size: 18px; font-family: 'Lato', sans-serif; font-weight: 500"><span style="color: #e00122">WE ENGINEER BETTER </span> isn’t just our motto, it’s our call to action.</p>
-                    	 		</p>
+            <br><p style="text-align: center; " class="fontBody"><span style="color: #e00122">WE ENGINEER BETTER </span> isn’t just our motto, it’s our call to action.</p>
+                    	 		
 						  </div>
 						  
 						</div>
@@ -137,163 +87,15 @@
 	</div>
 	
         
-		<!--/slider-->
-        	
-      <!--<section class="ct-section ct-u-background- -black">
-        <ul class="ct-js-gallery-filters ct-gallery-filters ct-u-margin-both-0">
-          <li><a href="#" data-filter="*" class="btn btn-motive-o btn-sm active">all</a></li>
-          <li><a href="#" data-filter=".marketing" class="btn btn-motive-o btn-sm">marketing</a></li>
-          <li><a href="#" data-filter=".training" class="btn btn-motive-o btn-sm">training</a></li>
-          <li><a href="#" data-filter=".other" class="btn btn-motive-o btn-sm">other</a></li>
-        </ul>
-      </section>-->
-      
-      <!--<div id="ct-gallery" class="ct-gallery ct-js-gallery ct-gallery- -col5 lightGallery"><a href="assets/images/content/portfolio-big-image.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image2.jpg">
-          <article class="ct-gallery-item training">
-            <figure><img src="assets/images/content/portfolio-thumbnail2.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image3.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail3.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image4.jpg">
-          <article class="ct-gallery-item training">
-            <figure><img src="assets/images/content/portfolio-thumbnail4.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image5.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail5.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image6.jpg">
-          <article class="ct-gallery-item other">
-            <figure><img src="assets/images/content/portfolio-thumbnail6.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image7.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail7.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image8.jpg">
-          <article class="ct-gallery-item other">
-            <figure><img src="assets/images/content/portfolio-thumbnail8.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image9.jpg">
-          <article class="ct-gallery-item other">
-            <figure><img src="assets/images/content/portfolio-thumbnail9.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image10.jpg">
-          <article class="ct-gallery-item training">
-            <figure><img src="assets/images/content/portfolio-thumbnail10.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image2.jpg">
-          <article class="ct-gallery-item training">
-            <figure><img src="assets/images/content/portfolio-thumbnail2.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image3.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail3.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image4.jpg">
-          <article class="ct-gallery-item training">
-            <figure><img src="assets/images/content/portfolio-thumbnail4.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a><a href="assets/images/content/portfolio-big-image5.jpg">
-          <article class="ct-gallery-item marketing">
-            <figure><img src="assets/images/content/portfolio-thumbnail5.jpg" alt=""/>
-              <figcaption>
-                <div class="ct-gallery-item-text">
-                  <div class="inner"><span class="ct-gallery-item-title ct-section-header-decoration-center">motivational campaign</span><span class="ct-gallery-item-tags">marketing / other</span></div>
-                </div>
-              </figcaption>
-            </figure>
-          </article></a>
-      </div>-->
-      <!--Testimonial-->
+		
 	<article id="aerodynamics">
-		<section data-background="assets/images/Renders/pod_fan.png" data-height="10%" data-parallax="100" class="testimonial-section" style="background-size: auto 100%">
-			<div class="testimonial-header" style="font-family: 'Lato', sans-serif; font-weight: 900; font-type: bold">
+		<section data-background="assets/images/Renders/pod_fan.png" data-height="10%" data-parallax="100" class="testimonial-section " style="background-size: auto 100%">
+			<div class="testimonial-header fontBody900" >
 				<h2>Aerodynamics</h2>
 		</div>
 	</section>
 
-	<div class="tablex item testimonial-dsc">
+	<div class="tablex item  whiteGradient paddingTop60 paddingBottom80 testimonial-dsc ">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 ">
@@ -303,11 +105,11 @@
 						  <div class="ct-testimonials-image"><img src="assets/images/Renders/HQ_Structure.png" alt=""/></div>
 						  -->
 						  <div>
-								<p style="font-size: 18px; text-align: justify; font-family: 'Lato', sans-serif; font-weight: 500">USP and key details: Counter rotating fans (CRfan)  
+								<p class="fontBody">USP and key details: Counter rotating fans (CRfan)  
 								bypass flow through the pod while balancing torque, providing a higher pressure ratio, 
 								lesser power requirement and lesser weight. The flow is bypassed through a partial 
 								annular nozzle which keeps the flow attached while providing a flush finish on the pod floor. 
-								The cold air from the nozzle is used to cool the braking system.</br></br>
+								The cold air from the nozzle is used to cool the braking system.<br><br>
 
 								CR fan configuration with the partial annular nozzle will be looked into more detail in future
 								 development. 
@@ -326,12 +128,12 @@
 	
 	<article id="structures">
 		<section data-background="assets/images/Renders/space_frame.jpg" data-height="10%"  data-parallax="100" class="testimonial-section" style="background-size: auto 100%">
-			<div class="testimonial-header" style="font-family: 'Lato', sans-serif; font-weight: 900; font-type: bold">
+			<div class="testimonial-header fontBody900">
 				<h2>Structures</h2>
 		</div>
 	</section>
 
-	<div class="tablex item testimonial-dsc">
+	<div class="tablex item   whiteGradient paddingTop60 paddingBottom80 testimonial-dsc">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 ">
@@ -341,14 +143,14 @@
 						  <div class="ct-testimonials-image"><img src="assets/images/Renders/HQ_Structure.png" alt=""/></div>
 						  -->
 						  <div>
-								<p style="font-size: 18px; text-align: justify; font-family: 'Lato', sans-serif; font-weight: 500"> This hyperloop pod design has a modular structure with a 
+								<p class="fontBody"> This hyperloop pod design has a modular structure with a 
 								disjoint engine and payload area. The payload structure is strong enough to sustain the 
 								crash loads while the engine structure is designed to buckle and act as an impact 
 								attenuator during a crash thus protecting the payload.
 								 The crash criteria is assumed considering the g forces that a human body can tolerate 
 								 during a crash.
 									A common mount is designed for the levitation and its fail safe that prevents the levitation device from ever crashing on the track.
-									</br></br>
+									<br><br>
 							Modular structure with engine area and passenger area being separate. The passenger area designed for strength while the engine area has been designed for lower buckling strength and hence acts as crumple zone in case of crash. 
 
 								</p>
@@ -363,12 +165,12 @@
 	</article>
 	<article id="electronics">
 		<section data-background="assets/images/Renders/HQ_BrakeAssem4.png" data-height="10%" data-parallax="100" class="testimonial-section" style="background-size: auto 100%">
-			<div class="testimonial-header" style="font-family: 'Lato', sans-serif; font-weight: 900; font-type: bold">
+			<div class="testimonial-header fontBody900" >
 				<h2>Electronics</h2>
 		</div>
 	</section>
 
-	<div class="tablex item testimonial-dsc">
+	<div class="tablex item   whiteGradient paddingTop60 paddingBottom80 testimonial-dsc">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 ">
@@ -378,7 +180,7 @@
 						  <div class="ct-testimonials-image"><img src="assets/images/Renders/HQ_Structure.png" alt=""/></div>
 						  -->
 						  	<div>
-								<p style="font-size: 18px; text-align: justify; font-family: 'Lato', sans-serif; font-weight: 500">Our transponics system is responsible for the design and 
+								<p class="fontBody">Our transponics system is responsible for the design and 
 								development of levitation, electrical and electronic systems for the pod. These include 
 								electromagnetic, electric circuit, sensor integration and embedded software sub-systems. 
 								Magnetic levitation is achieved using the Arx Pax hover engines. Military grade Inertial 
@@ -396,12 +198,12 @@
 	</article>
 	<article id="controls">
 			<section data-background="assets/images/Renders/HQ_Structure_top.png" data-height="10%" data-parallax="100" class="testimonial-section" style="background-size: auto 100%">
-				<div class="testimonial-header" style="font-family: 'Lato', sans-serif; font-weight: 900; font-type: bold">
+				<div class="testimonial-header fontBody900" >
 					<h2>Dynamics and Controls</h2>
 			</div>
 		</section>
 
-		<div class="tablex item testimonial-dsc">
+		<div class="tablex item   whiteGradient paddingTop60 paddingBottom80 testimonial-dsc ">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 ">
@@ -411,7 +213,7 @@
 							  <div class="ct-testimonials-image"><img src="assets/images/Renders/HQ_Structure.png" alt=""/></div>
 							  -->
 								<div>
-									<p style="font-size: 18px; text-align: justify; font-family: 'Lato', sans-serif; font-weight: 500">We understand the dynamics of the pod and building 
+									<p class="fontBody">We understand the dynamics of the pod and building 
 									mathematical models of the pod. Using these models, we develop the brain or the 
 									control system for the pod. The control system takes inputs from the sensors, 
 									processes them and provides necessary control outputs to actuators that ensure 
@@ -428,206 +230,28 @@
 		</article>
       
     <!-- Footer-->
-      <footer class="ct-footer" >
-        <div class="ct-prefooter">
-          <div class="container">
-            <ul class="ct-socials-full-width list-inline">
-              <li class="ct-socials__itemfacebook"><a href="https://www.facebook.com/hyperloopuc" target="__blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="ct-socials__itemtwitter"><a href="https://twitter.com/hyperloopuc" target="__blank"><i class="fa fa-twitter"></i></a></li>
-              <li class="ct-socials__itemlinkedin"><a href="https://www.linkedin.com/company/hyperloop-uc" target="__blank"><i class="fa fa-linkedin"></i></a></li>
-              <li class="ct-socials__itemnewsletter"><a href="sign-up.html" target="__blank"><i class="fa fa-feed"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="ct-postfooter">
-          <div class="container" style="text-align: center;">
-            <div class="ct-footer-navigation">
-            	<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%; color: #ffffff"><a href="index.html">Home</a>
-						</li>
-						<div><a href="index.html">Index</a>
-						</div>
-						<div><a href="index.html#Hyperloop">Hyperloop</a>
-						</div>
-						<div><a href="index.html#HyperloopUC">Hyperloop UC</a>
-						</div>
-						<div><a href="index.html#sponsor">Sponsors</a>
-						</div>
-						
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%; color: #ffffff"><a href="index.html">Pod</a>
-						</li>
-						<div style="border-left: solid #444444 1px; "><a href="pod.html#aerodynamics">Aerodynamics</a>
-						</div>
-						<div style="border-left: solid #444444 1px; "><a href="pod.html#structures">Structures</a>
-						</div>
-						<div style="border-left: solid #444444 1px; "><a href="pod.html#electronics">Electronics</a>
-						</div>
-						<div style="border-left: solid #444444 1px; "><a href="pod.html#controls">Controls</a>
-						</div>
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%; color: #ffffff"><a href="sponsors.html">Sponsors</a>
-						</li>
-						<div style="border-left: solid #444444 1px; "><a href="sponsors.html#thanks">Thank You</a>
-						</div>
-						<div style="border-left: solid #444444 1px; "><a href="sponsors.html#logos">Our Sponsors</a>
-						</div>
-						<div style="border-left: solid #444444 1px; "><a href="sponsors.html#sponsor_us">Sponsor Us</a>
-						</div>
-						<div style="border-left: solid #444444 1px; height: 24px;">
-						</div>
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-						<li class="text-uppercase" style="font-size: 150%; color: #ffffff"><a href="donate.html">Donate</a>
-						</li>
-						<div style="border-left: solid #444444 1px; "><a href="donate.html#donate_text">Support Us</a>
-						</div>
-						<div style="border-left: solid #444444 1px; height: 72px;">
-						</div>
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-						<li class="text-uppercase" style="font-size: 150%; color: #ffffff"><a href="contact.html">Contact</a>
-						</li>
-						<div style="border-left: solid #444444 1px; "><a href="contact.html#contactus_form">Get in Touch</a>
-						</div>
-						<div style="border-left: solid #444444 1px; height: 72px;">
-						</div>
-					</ul>
-				</div>
-				<!--
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%"><a href="index.html">Home</a>
-						</li>
-						<div ><a href="index.html#aboutUs">About Us</a>
-						</div>
-						<div><a href="index.html#journey">Journey</a>
-						</div>
-						<div><a href="index.html#sponsor">Sponsors</a>
-						</div>
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%"><a href="index.html">Home</a>
-						</li>
-						<div ><a href="index.html#aboutUs">About Us</a>
-						</div>
-						<div><a href="index.html#journey">Journey</a>
-						</div>
-						<div><a href="index.html#sponsor">Sponsors</a>
-						</div>
-					</ul>
-				</div>
-				<div style="width: 20%; float: left;">
-				  <ul class="list-inline list-unstyled">
-					   <li class="text-uppercase" style="font-size: 150%"><a href="index.html">Home</a>
-						</li>
-						<div ><a href="index.html#aboutUs">About Us</a>
-						</div>
-						<div><a href="index.html#journey">Journey</a>
-						</div>
-						<div><a href="index.html#sponsor">Sponsors</a>
-						</div>
-						
-					</ul>
-				</div>
-				-->
-            </div>
-          </div>
-          <div class="ct-footer-copyright">
-			  <div class="container" style="padding-left: 2%;">
-			  	<span style="padding-right: 1%; color: rgba(255, 255, 255, 0.5);">Follow &nbsp;  Us</span><span style="padding-right: 1%;">|</span>
-				<span style="padding-right: 2%"><a href="https://www.facebook.com/hyperloopuc" target="__blank">Facebook</a></span>
-				<span style="padding-right: 2%"><a href="https://twitter.com/hyperloopuc" target="__blank">Twitter</a></span>
-				<span style="padding-right: 2%"><a href="https://www.linkedin.com/company/hyperloop-uc" target="__blank">LinkedIn</a></span>
-				<span style="float: right;">&copy; 2016 <span style="color: #E00122;">Hyperloop UC</span>. All rights reserved.</span>
-			  </div>
-          	  
-          
-            </div>
-        </div>
+       <footer class="ct-footer" >
+        
+          <div class="container" id="footerContainer">
+            
+       
+         </div>
       </footer>
-    </div>
-    
-    
-    
-    
-    <!-- Mobile Menu //-->
-    
-    <div class="ct-menu-mobile">
-      <div class="ct-menu-body">
-        <div class="ct-menu-button ct-js-menu-button"></div>
-        <div class="ct-menu-inner">
-          <div class="ct-menu-logo"><a href="index.html"><img src="assets/images/Renders/logo_whiteUC_1.png" alt=""></a></div>
-          
-          <div class="ct-menu-contact"></div>
-          <!--
-          <div class="ct-menu-user-panel">
-            <div class="ct-panel-left"><a data-toggle="modal" data-target="#modal_login"><i class="fa fa-power-off"></i>login</a></div>
-            <div class="ct-panel-right"><a data-toggle="modal" data-target="#modal_register"><i class="fa fa-plus"></i>register</a></div>
-            <div class="clearfix"></div>
-          </div>
-          
-          <div class="ct-menu-search">
-            <input type="text" Placeholder="Search ..." class="form-control input-lg">
-          </div>
-          -->
-          <ul class="ct-menu-mobile-nav ct-js-menu-mobile-nav">
-            <!--<li class="dropdown dropdown-fw"><a>Home</a>
-              <ul class="dropdown-menu">
-                <li><a href="coach.html">coach</a>
-                </li>
-                <li><a href="speaker.html">speaker</a>
-                </li>
-                <li><a href="training.html">training</a>
-                </li>
-                <li><a href="online-content.html">online content</a>
-                </li>
-                <li><a href="coming-soon.html">coming soon</a>
-                </li>
-                <li><a href="index.html">corporate</a>
-                </li>
-              </ul>
-            </li>-->
-            <li><a href="index.html" style="color=#fff">Home</a>
-            </li>
-            <li><a href="pod.html" style="color=#fff">Pod</a>
-            </li>
-            <li><a href="sponsors.html" style="color=#fff">Sponsors</a>
-            </li>
-            <li><a href="donate.html" style="color=#fff">Donate</a>
-            </li>
-            <li><a href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <ul class="ct-socials list-inline list-unstyled" style="padding-top: 5%">
-              <li class="ct-socials__itemfacebook"><a href="https://www.facebook.com/hyperloopuc" target="__blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="ct-socials__itemtwitter"><a href="https://twitter.com/hyperloopuc" target="__blank"><i class="fa fa-twitter"></i></a></li>
-              <li class="ct-socials__itemlinkedin"><a href="https://www.linkedin.com/company/hyperloop-uc" target="__blank"><i class="fa fa-linkedin"></i></a></li>
-              <li class="ct-socials__itemnewsletter"><a href="sign-up.html" target="__blank"><i class="fa fa-feed"></i></a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
     
     <!-- JavaScripts-->
     <script src="assets/js/sella.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/form/js/contact-form.js"></script>
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
-
+    <script> 
+    $(function(){
+      $("#footerContainer").load("footer.html"); 
+    });
+	$(function(){
+		$("#header").load("header.html");
+	});
+    </script> 
+    </div>
 
   </body>
 </html>
